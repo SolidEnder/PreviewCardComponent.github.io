@@ -1,0 +1,158 @@
+body {
+	background-color: hsl(30, 38%, 92%);
+}
+div.productContainer {
+	position: absolute;
+	left: 30px;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 5%;
+	width: 580px;
+}
+h5.productCategory {
+	position: absolute;
+	top: 0;
+	left: 300px;
+	font-family: "Montserrat", sans-serif; 
+	font-weight: 200;
+}
+h2.productHeader {
+	position: absolute;
+	top: 30px;
+	left: 300px;
+	font-family: "Fraunces", serif;
+	width: 220px;
+}
+p.productDescription {
+	position: absolute;
+	top: 120px;
+	left: 300px;
+	width: 220px;
+}
+h2.markdownPrice {
+	position: absolute;
+	top: 210px;
+	left: 300px;
+	font-family: "Fraunces", serif;
+	color: hsl(158, 36%, 37%);
+	font-weight: 500;
+}
+s.origPrice {
+	position: absolute;
+	top: 230px;
+	left: 430px;
+}
+div.cartContainer {
+	position: absolute;
+	top: 130px;
+	left: 300px;
+}
+button.add-to-cart {
+	position: absolute;
+	width: 200px;
+	height: 40px;
+	background-color: hsl(158, 36%, 37%);
+	white-space: nowrap;
+	top: 155px;
+	border-radius: 4px;	
+	-webkit-box-shadow: 0 3px 13px -2px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 3px 13px -2px rgba(0, 0, 0, 0.15);
+	display: flex;
+	justify-content: space-around;
+	overflow: hidden;
+	outline: none;
+	padding: 0.7rem;
+	cursor: pointer;
+}
+p.cartText {
+	position: absolute;
+	bottom: -6px;
+	left: 60px;
+	color: white;
+	font-size: 1em;
+}
+img.cartIcon {
+	position: absolute;
+	left: 30px;
+	top: 10px;
+}
+img.productPic {
+	border-radius: 5% 0 0 5%;
+	position: relative;
+	top: 1px;
+}
+
+
+@media (max-width: 600px) {
+	img.productPic {
+		width: 270px;
+		height: 270px;
+		border-radius: 5% 5% 0 0;
+		position: absolute;
+		top: 0;
+	}
+	
+	div.productContainer {
+		width: 270px;
+		height: 590px;
+	}
+	
+	h5.productCategory {
+		position: absolute;
+		top: 275px;
+		left: 30px;
+	}
+	
+	h2.productHeader {
+		position: absolute;
+		top: 305px;
+		left: 30px;
+		width: 220px;
+	}
+	
+	p.productDescription {
+		position: absolute;
+		top: 375px;
+		left: 30px;
+		width: 200px;
+	}
+	
+	h2.markdownPrice {
+		position: absolute;
+		top: 460px;
+		left: 30px;
+	}
+	
+	s.origPrice {
+		position: absolute;
+		top: 480px;
+		left: 150px;
+	}
+	
+	div.cartContainer {
+		position: absolute;
+		top: 370px;
+		left: 30px;
+	}
+	
+	button.add-to-cart {
+		width: 200px;
+	}
+	
+	p.cartText {
+		position: absolute;
+		left: 70px;
+	}
+	
+	img.cartIcon {
+		position: absolute;
+		left: 50px;
+	}
+}
+
+@media (min-width: 600px) {
+	div.productContainer {
+		position: absolute;
+		left: 400px;
+		top: 120px;
+	}
+}
